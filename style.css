@@ -8,7 +8,16 @@ body {
     margin: 0;
 }
 
-
+#weather-container {
+    background: rgba(255, 255, 255, 0.3);
+    width: 400px; /* Set a fixed width for the container */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
 
 h2, label, p {
     color: #fff;
@@ -37,7 +46,7 @@ button {
 }
 
 button:hover {
-    background: #000000;
+    background: #333333;
 }
 
 #temp-div p {
@@ -52,26 +61,18 @@ button:hover {
 #weather-icon {
     width: 200px;
     height: 200px;
-    margin: 0 auto 10px; 
-    margin-bottom: 0;
+    margin: 0 auto 10px;
     display: none;
 }
 
 #hourly-forecast {
-    margin-top: 50px;
-    overflow-x: auto;
-    white-space: nowrap;
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
 }
 
 .hourly-item {
-    flex: 0 0 auto;
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 10px;
+    text-align: center;
     color: white;
 }
 
